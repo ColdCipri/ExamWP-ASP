@@ -16,6 +16,7 @@ namespace ExamWP_ASP
             {
                 Clear();
                 GridFill();
+                GridFillTimetable();
             }
         }
 
@@ -127,6 +128,20 @@ namespace ExamWP_ASP
                 sqlDataAdapter.Fill(dataTable);
                 gvName.DataSource = dataTable;
                 gvName.DataBind();
+            }
+        }
+
+        void GridFillTimetable()
+        {
+            using (MySqlConnection sqlCon = new MySqlConnection(conn))
+            {
+                sqlCon.Open();
+                MySqlDataAdapter sqlDataAdapter = new MySqlDataAdapter("timetableviewall", sqlCon);
+                sqlDataAdapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                DataTable dataTable = new DataTable();
+                sqlDataAdapter.Fill(dataTable);
+                gvTimetable.DataSource = dataTable;
+                gvTimetable.DataBind();
             }
         }
 

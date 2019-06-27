@@ -131,6 +131,18 @@
 
             <br />
             <br />
+
+            <asp:GridView ID="gvTimetable" runat="server" AutoGenerateColumns="false">
+                <Columns>
+                    <asp:BoundField DataField="IDCourse" HeaderText="Course" />
+                    <asp:BoundField DataField="IDRoom" HeaderText="Room" />
+                    <asp:BoundField DataField="day" HeaderText="day" />
+                    <asp:BoundField DataField="beginningHour" HeaderText="beginningHour" />
+                    <asp:BoundField DataField="endingHour" HeaderText="endingHour" />
+                </Columns>
+            </asp:GridView>
+
+
         </div>
     </form>
 </body>
