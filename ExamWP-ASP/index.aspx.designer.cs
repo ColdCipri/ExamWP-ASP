@@ -139,6 +139,15 @@ namespace ExamWP_ASP {
         protected global::System.Web.UI.WebControls.Label label2;
         
         /// <summary>
+        /// gvName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvName;
+        
+        /// <summary>
         /// LabelSearch control.
         /// </summary>
         /// <remarks>
@@ -155,15 +164,6 @@ namespace ExamWP_ASP {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList CourseList;
-        
-        /// <summary>
-        /// gvName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvName;
         
         /// <summary>
         /// gvTimetable control.

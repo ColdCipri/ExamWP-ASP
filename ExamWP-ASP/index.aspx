@@ -102,19 +102,6 @@
             
             <br />
             <br />
-            <table>
-                <tr>
-                    <td colspan="2">
-                        <asp:Label ID="LabelSearch" runat="server" Text="Courses :"></asp:Label>
-                    </td>
-
-                    <td colspan="2">
-                        <asp:DropDownList ID="CourseList" runat="server" AppendDataBoundItems="true">
-                        </asp:DropDownList>
-                    </td>
-
-                </tr>
-            </table>
             
             <asp:GridView ID="gvName" runat="server" AutoGenerateColumns="false">
                 <Columns>
@@ -128,7 +115,21 @@
                     </asp:TemplateField>
                 </Columns>
             </asp:GridView>
+            <br />
+            <br />
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <asp:Label ID="LabelSearch" runat="server" Text="Courses :"></asp:Label>
+                    </td>
 
+                    <td colspan="2">
+                        <asp:DropDownList ID="CourseList" runat="server" AppendDataBoundItems="true">
+                        </asp:DropDownList>
+                    </td>
+
+                </tr>
+            </table>
             <br />
             <br />
 
